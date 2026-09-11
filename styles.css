@@ -941,6 +941,16 @@ a {
   display: none;
 }
 
+.airbnb-card {
+  --stay-accent: #ff385c;
+  --stay-soft: #fff0f3;
+}
+
+.hotel-card {
+  --stay-accent: #3557d6;
+  --stay-soft: #edf2ff;
+}
+
 @media (max-width: 640px) {
   .schedule-day-header {
     padding: 18px;
