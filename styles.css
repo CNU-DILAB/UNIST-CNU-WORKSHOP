@@ -217,7 +217,7 @@ a {
   border-radius: var(--radius-xl);
   padding: 26px;
   box-shadow: var(--shadow);
-  transform: rotate(1.2deg);
+  transform: none;
 }
 
 .event-card-top {
