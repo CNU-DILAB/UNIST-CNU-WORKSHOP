@@ -937,6 +937,281 @@ a {
   background: var(--accent-soft);
 }
 
+/* =========================================
+   Presentation Files
+========================================= */
+
+.presentation-files {
+  margin-top: 42px;
+}
+
+
+/* Header */
+
+.presentation-files-header {
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.presentation-files-eyebrow {
+  margin: 0 0 7px;
+
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.presentation-files-header h3 {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.presentation-files-description {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.presentation-files-count {
+  flex: 0 0 auto;
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+
+/* Grid */
+
+.presentation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+
+/* Card */
+
+.presentation-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 270px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba(214, 220, 232, 0.95);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(53, 87, 214, 0.08),
+      transparent 30%
+    ),
+    rgba(255, 255, 255, 0.88);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.presentation-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(53, 87, 214, 0.25);
+
+  box-shadow:
+    0 14px 34px rgba(30, 50, 100, 0.08);
+}
+
+
+/* Top badges */
+
+.presentation-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation-affiliation {
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.presentation-file-type {
+  color: #98a2b5;
+
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+
+/* Presenter */
+
+.presentation-presenter {
+  margin-top: 26px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.presentation-avatar {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.presentation-presenter span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.presentation-presenter h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 18px;
+  font-weight: 850;
+}
+
+
+/* Topic */
+
+.presentation-topic {
+  margin-top: 24px;
+}
+
+.presentation-topic > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.presentation-topic p {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.65;
+}
+
+
+/* Download */
+
+.presentation-download {
+  margin-top: auto;
+  padding-top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--accent);
+
+  font-size: 12px;
+  font-weight: 850;
+
+  text-decoration: none;
+}
+
+.presentation-download-icon {
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: var(--accent-soft);
+
+  font-size: 15px;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.presentation-download:hover .presentation-download-icon {
+  transform: translateY(2px);
+
+  background: rgba(53, 87, 214, 0.16);
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+  .presentation-files-header {
+    align-items: flex-start;
+  }
+
+  .presentation-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 
 /* Mobile */
 
