@@ -21,7 +21,7 @@ UNIST와 충남대학교 공동 워크샵용 GitHub Pages 웹사이트입니다.
 const WORKSHOP = {
   date: "2026. 09. 30 ~ 2026. 10. 01",
   venue: "충남대학교",
-  repository: "https://github.com/gooriiie/UNIST-CNU-WORKSHOP",
+  repository: "https://github.com/CNU-DILAB/UNIST-CNU-WORKSHOP",
 };
 ```
 
