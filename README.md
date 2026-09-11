@@ -58,4 +58,4 @@ const WORKSHOP = {
 
 ## GitHub Pages 반영
 
-수정 파일을 현재 Pages가 바라보는 브랜치에 업로드/commit 한 후 페이지를 새로고침하세요. 예전 화면이 남으면 `Ctrl + Shift + R`로 강력 새로고침하면 됩니다.
+수정 파일을 현재 Pages가 바라보는 브랜치에 업로드/commit 한 후 페이지를 새로고침하세요.
