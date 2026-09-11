@@ -284,103 +284,149 @@
           </article>
         </div>
       </section>
-
-      <section id="materials" class="section-wrap content-section">
-        <div class="section-heading">
-          <span>04</span>
-          <div>
-            <p class="eyebrow">MATERIALS</p>
-            <h2>발표자료</h2>
-          </div>
+    <section id="materials" class="section-wrap content-section">
+      <div class="section-heading">
+        <span>04</span>
+        <div>
+          <p class="eyebrow">MATERIALS</p>
+          <h2>발표자료</h2>
         </div>
-
-        <div class="upload-panel">
-          <div class="upload-copy">
-            <span class="upload-badge">Presentation Archive</span>
-            <h3>발표자료를 한 곳에 모아두세요.</h3>
-            <p>
-              GitHub 저장소의 <code>materials/</code> 폴더에 PDF 또는 PPTX 파일을 업로드하면 됩니다.
-              업로드 권한이 있는 참여자는 아래 버튼을 눌러 바로 파일을 추가할 수 있습니다.
+      </div>
+    
+      <!-- 기존 파란색 발표자료 업로드 영역 -->
+      <div class="upload-panel">
+        <div class="upload-copy">
+          <span class="upload-badge">Presentation Archive</span>
+    
+          <h3>발표자료를 한 곳에 모아두세요.</h3>
+    
+          <p>
+            GitHub 저장소의 <code>materials/</code> 폴더에 PDF 또는 PPTX 파일을
+            업로드하면 됩니다. 업로드 권한이 있는 참여자는 아래 버튼을 눌러
+            바로 파일을 추가할 수 있습니다.
+          </p>
+        </div>
+    
+        <div class="upload-actions">
+          <a
+            id="upload-link"
+            class="button primary wide"
+            href="https://github.com/gooriiie/UNIST-CNU-WORKSHOP/upload/main/materials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            발표자료 업로드 ↗
+          </a>
+    
+          <a
+            id="materials-link"
+            class="button ghost wide"
+            href="https://github.com/gooriiie/UNIST-CNU-WORKSHOP/tree/main/materials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            업로드된 자료 보기
+          </a>
+        </div>
+      </div>
+    
+    
+      <!-- ==================================================
+           여기부터 별도의 발표자료 다운로드 영역
+      =================================================== -->
+    
+      <div class="presentation-files">
+    
+        <div class="presentation-files-header">
+          <div>
+            <p class="presentation-files-eyebrow">PRESENTATION FILES</p>
+            <h3>업로드된 발표자료</h3>
+            <p class="presentation-files-description">
+              발표자별 연구 주제와 발표자료를 확인할 수 있습니다.
             </p>
           </div>
-
-          <div class="materials-list">
-          <div class="materials-list-header">
-            <div>
-              <span class="materials-eyebrow">PRESENTATION FILES</span>
-              <h3>업로드된 발표자료</h3>
+    
+          <span class="presentation-files-count">2 FILES</span>
+        </div>
+    
+    
+        <div class="presentation-grid">
+    
+          <!-- 한승훈 -->
+          <article class="presentation-card">
+    
+            <div class="presentation-card-top">
+              <span class="presentation-affiliation">CNU</span>
+              <span class="presentation-file-type">PDF</span>
             </div>
-
-            <span class="materials-count">2 FILES</span>
-          </div>
-
-
-          <!-- 한승훈 발표자료 -->
-          <article class="material-item">
-            <div class="material-person">
-              <div class="material-avatar">HS</div>
-
+    
+            <div class="presentation-presenter">
+              <div class="presentation-avatar">SH</div>
+    
               <div>
-                <span class="material-affiliation">CNU</span>
+                <span>Presenter</span>
                 <h4>한승훈</h4>
               </div>
             </div>
-
-            <div class="material-topic">
-              <span class="material-label">발표 주제</span>
-              <p>효율적인 어텐션 메커니즘을 활용한 교통 예측 연구</p>
+    
+            <div class="presentation-topic">
+              <span>발표 주제</span>
+              <p>
+                효율적인 어텐션 메커니즘을 활용한 교통 예측 연구
+              </p>
             </div>
-
+    
             <a
-              class="material-download"
+              class="presentation-download"
               href="materials/hansunghoon_traffic_attention.pdf"
               download
             >
-              <span>PDF</span>
-              발표자료 다운로드
-              <span class="download-arrow">↓</span>
+              <span>PDF 발표자료 다운로드</span>
+              <span class="presentation-download-icon">↓</span>
             </a>
+    
           </article>
-
-
-          <!-- 이관희 발표자료 -->
-          <article class="material-item">
-            <div class="material-person">
-              <div class="material-avatar">GH</div>
-
+    
+    
+          <!-- 이관희 -->
+          <article class="presentation-card">
+    
+            <div class="presentation-card-top">
+              <span class="presentation-affiliation">CNU</span>
+              <span class="presentation-file-type">PDF</span>
+            </div>
+    
+            <div class="presentation-presenter">
+              <div class="presentation-avatar">GH</div>
+    
               <div>
-                <span class="material-affiliation">CNU</span>
+                <span>Presenter</span>
                 <h4>이관희</h4>
               </div>
             </div>
-
-            <div class="material-topic">
-              <span class="material-label">발표 주제</span>
-              <p>그래프를 활용한 이상탐지 연구</p>
+    
+            <div class="presentation-topic">
+              <span>발표 주제</span>
+              <p>
+                그래프를 활용한 이상탐지 연구
+              </p>
             </div>
-
+    
             <a
-              class="material-download"
+              class="presentation-download"
               href="materials/leegwanhee_graph_anomaly_detection.pdf"
               download
             >
-              <span>PDF</span>
-              발표자료 다운로드
-              <span class="download-arrow">↓</span>
+              <span>PDF 발표자료 다운로드</span>
+              <span class="presentation-download-icon">↓</span>
             </a>
+    
           </article>
+    
         </div>
-          
-          <div class="upload-actions">
-            <a id="upload-link" class="button primary wide" href="https://github.com/gooriiie/UNIST-CNU-WORKSHOP/upload/main/materials" target="_blank" rel="noopener noreferrer">
-              발표자료 업로드 ↗
-            </a>
-            <a id="materials-link" class="button ghost wide" href="https://github.com/gooriiie/UNIST-CNU-WORKSHOP/tree/main/materials" target="_blank" rel="noopener noreferrer">
-              업로드된 자료 보기
-            </a>
-          </div>
-        </div>       
-      </section>
+      </div>
+    </section>
+      
     </main>
 
     <footer class="footer section-wrap">
