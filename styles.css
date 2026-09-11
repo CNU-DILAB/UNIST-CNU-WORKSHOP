@@ -508,11 +508,41 @@ a {
   letter-spacing: 0.05em;
 }
 
+/* Airbnb */
+.airbnb-card {
+  --stay-accent: #ff385c;
+  --stay-soft: #fff0f3;
+
+  background:
+    radial-gradient(
+      circle at 92% 4%,
+      rgba(255, 56, 92, 0.10),
+      transparent 28%
+    ),
+    rgba(255, 255, 255, 0.90);
+}
+
 .stay-source.airbnb {
-  color: #b32449;
+  color: #d92d50;
   background: #fff0f3;
 }
 
+
+/* Hotel */
+.hotel-card {
+  --stay-accent: #3557d6;
+  --stay-soft: #edf2ff;
+
+  background:
+    radial-gradient(
+      circle at 92% 4%,
+      rgba(53, 87, 214, 0.10),
+      transparent 28%
+    ),
+    rgba(255, 255, 255, 0.90);
+}
+
+.stay-source.hotel,
 .stay-source.agoda {
   color: #2447b8;
   background: #edf2ff;
@@ -528,13 +558,25 @@ a {
   width: 48px;
   height: 48px;
   margin-top: 30px;
+
   display: grid;
   place-items: center;
+
   border-radius: 14px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 23px;
-  font-weight: 800;
+
+  background: var(--stay-soft, var(--accent-soft));
+  color: var(--stay-accent, var(--accent));
+}
+
+.stay-icon svg {
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .stay-card h3 {
@@ -576,7 +618,7 @@ a {
   place-items: center;
   border-radius: 9px;
   background: #fff;
-  color: var(--accent);
+  color: var(--stay-accent, var(--accent));
   font-weight: 900;
 }
 
@@ -604,7 +646,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--accent);
+  color: var(--stay-accent, var(--accent));
   font-size: 13px;
   font-weight: 850;
 }
