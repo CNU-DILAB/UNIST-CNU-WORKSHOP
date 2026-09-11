@@ -7,7 +7,7 @@ const WORKSHOP = {
 
   // GitHub 저장소 주소를 실제 주소로 바꾸세요.
   // 예: https://github.com/dilab-cnu/unist-cnu-workshop
-  repository: "https://github.com/gooriiie/UNIST-CNU-WORKSHOP",
+  repository: "https://github.com/CNU-DILAB/UNIST-CNU-WORKSHOP",
 };
 
 const dateEl = document.querySelector("#event-date");
