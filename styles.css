@@ -730,6 +730,227 @@ a {
   width: 100%;
 }
 
+/* =========================================
+   Presentation Materials List
+========================================= */
+
+.materials-list {
+  margin-top: 34px;
+}
+
+.materials-list-header {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.materials-eyebrow {
+  display: block;
+  margin-bottom: 6px;
+
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.materials-list-header h3 {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.materials-count {
+  padding: 7px 11px;
+
+  border-radius: 999px;
+  background: var(--accent-soft);
+
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+
+/* Material row */
+
+.material-item {
+  min-height: 110px;
+  margin-bottom: 12px;
+  padding: 22px 24px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr auto;
+  align-items: center;
+  gap: 32px;
+
+  border: 1px solid rgba(214, 220, 232, 0.95);
+  border-radius: 20px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(53, 87, 214, 0.06),
+      transparent 28%
+    ),
+    rgba(255, 255, 255, 0.82);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.material-item:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(53, 87, 214, 0.25);
+
+  box-shadow:
+    0 12px 30px
+    rgba(32, 52, 110, 0.07);
+}
+
+
+/* Presenter */
+
+.material-person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.material-avatar {
+  flex: 0 0 auto;
+
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.material-affiliation {
+  display: block;
+  margin-bottom: 3px;
+
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.material-person h4 {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 850;
+}
+
+
+/* Topic */
+
+.material-topic {
+  min-width: 0;
+}
+
+.material-label {
+  display: block;
+  margin-bottom: 6px;
+
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.material-topic p {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+
+/* Download button */
+
+.material-download {
+  min-width: 185px;
+  padding: 14px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid rgba(53, 87, 214, 0.18);
+  border-radius: 13px;
+
+  background: #fff;
+
+  color: var(--accent);
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 850;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.material-download > span:first-child {
+  padding: 4px 6px;
+
+  border-radius: 6px;
+
+  background: var(--accent-soft);
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.download-arrow {
+  margin-left: auto;
+
+  font-size: 16px;
+}
+
+.material-download:hover {
+  transform: translateY(-1px);
+
+  background: var(--accent-soft);
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+  .material-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .material-download {
+    width: 100%;
+  }
+}
+
 .materials-note {
   margin-top: 16px;
   padding: 16px 18px;
