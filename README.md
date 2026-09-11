@@ -9,7 +9,7 @@ UNIST와 충남대학교 공동 워크샵용 GitHub Pages 웹사이트입니다.
 - 장소: **충남대학교**
 - 9월 30일: 점심 → CNU 연구발표 → UNIST 연구발표 → 임성수 교수님 발표 → CNU 투어 → 저녁/네트워킹
 - 10월 1일: 점심 식사
-- 발표자료 저장소: `gooriiie/UNIST-CNU-WORKSHOP/materials`
+- 발표자료 저장소: `CNU-DILAB/UNIST-CNU-WORKSHOP/materials`
 
 ## 어디를 수정하면 되나요?
 
