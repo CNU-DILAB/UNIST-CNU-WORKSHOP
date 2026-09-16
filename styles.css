@@ -1472,3 +1472,25 @@ a {
 }
 
 .schedule-row.day-one-last .schedule-dot::after { display: none; }
+
+/* 2026-09-16 workshop schedule & accommodation updates */
+.break-row {
+  background: linear-gradient(90deg, rgba(53, 87, 214, 0.045), rgba(255, 255, 255, 0));
+}
+
+.break-row .schedule-tag {
+  color: #5c6fd8;
+}
+
+.break-row .schedule-dot {
+  color: #7a8ae6;
+}
+
+.accommodation-grid.single-stay {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.accommodation-grid.single-stay .stay-card {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
